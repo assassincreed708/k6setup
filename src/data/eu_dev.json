@@ -1,0 +1,30 @@
+{
+    "api_key": "40d97fb0-cf6a-41a9-90f9-9806f01c514d",
+    "rezolve_api_host": "https://api.dev.eu.rezolve.com",
+    "rua_host": "https://rua.dev.eu.rezolve.com",
+    "engagement_host": "https://engagement.dev.eu.rezolve.com",
+    "core_host": "https://core.dev.eu.rezolve.com",
+    "act_host": "https://act.dev.eu.rezolve.com",
+    "auth0_host": "https://oauth.dev.eu.rezolve.com",
+    "auth0_data":{
+        "clientId": "QgCIgn5wgjTbjs7KdCT6FUWARAT7XtNg",
+        "clientSecret": "jpl3hQStUkErP2cxVImXCS2aJ8OVizpKzUApuuMUUQMghGcnef2bNKuRY2h_xZ2p",
+        "apiAudience": "https:\/\/rezolve.internal.api"
+    },
+    "users":[
+        {"username":"sagar31@mailinator.com", "password": "test1234"}
+    ],
+    "free_products": [
+        {
+            "merchant_id": 78,
+            "category_id": 18,
+            "product_id": 148
+        },
+        {
+            "merchant_id": 78,
+            "category_id": 18,
+            "product_id": 148
+        }
+    ],
+    "acts": ["48963c4e-8cb3-4209-91bc-03d3c7e51f06","d74939b7-e0d3-4283-9320-1d3f54c09ed0"]
+}

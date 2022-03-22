@@ -1,0 +1,41 @@
+{
+  "name": "k6-typescript-framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "check-types": "tsc",
+    "check-types:watch": "tsc --watch",
+    "monitors": "docker-compose up -d influxdb grafana",
+    "build": "webpack",
+    "test": "docker-compose run --rm k6 run --vus 1 --duration 40s -e env=cn_dev /scripts/mobileapi_load.js",
+    "seed": "docker-compose run --rm k6 run /scripts/seedCrocs.bundle.js",
+    "go:docker": "yarn build && yarn test",
+    "go:cn_dev_mobileapi": "yarn build && k6 run --vus 1 --duration 40s -e env=cn_dev dist/mobileapi_load.js",
+    "go:cn_stg_mobileapi": "yarn build && k6 run --vus 1 --duration 30s -e env=cn_stg --http-debug='full' dist/mobileapi_load.js",
+    "go:cn_dev_rua": "yarn build && k6 run --vus 1 --duration 2s -e env=cn_dev --http-debug='full' dist/rua_load.js"
+  },
+  "dependencies": {
+    "@types/k6": "^0.25.1",
+    "@types/node": "^13.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}

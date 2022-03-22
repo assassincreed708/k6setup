@@ -1,0 +1,27 @@
+{
+  "api_key": "489e1f8d-d82d-468f-9b45-76f26721a015",
+  "rezolve_api_host": "https://api.stg.rezolve.cn",
+  "rua_host": "https://rua.stg.rezolve.cn",
+  "engagement_host": "https://engagement.stg.rezolve.cn",
+  "core_host": "https://core.stg.rezolve.cn",
+  "act_host": "https://act.stg.rezolve.cn",
+  "auth0_host": "https://oauth.stg.rezolve.cn",
+  "auth0_data": {
+    "clientId": "ZUBPdT7h1FRUjjL9AX9bS4HhtbnyKkrt",
+    "clientSecret": "Qq6o-FnLff2Tajs2C8Bo8dRjyO5W11RsnwoL79ZAgn_XGZnQXl5d-t8AWV2zxpc3",
+    "apiAudience": "https://rezolve.internal.api"
+  },
+  "package_name": { "android": "fup.rezolve.app.dev" },
+  "registered_users": {
+    "country_code": 91,
+    "from": 8869320000,
+    "to": 8869320000,
+    "password": "test1234"
+  },
+  "address": { "country_code": "CN", "state": "AH" },
+  "free_products": [
+    { "merchant_id": 35, "category_id": 2, "product_id": 234 },
+    { "merchant_id": 36, "category_id": 2, "product_id": 235 }
+  ],
+  "acts": ["8e16f72d-bbb5-4a07-a485-598b45dbb2bd", "3a9dcb90-8562-4e4b-8629-e85d0bb8af89"]
+}
