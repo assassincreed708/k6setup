@@ -3,7 +3,7 @@ Framework for k6 load tests written in TypeScript.
 
 ## Quick Start :zap:
 
-1. Running without docker
+### Running without docker
 
 - Install the [k6 performance test tool](https://docs.k6.io/docs/installation).
 
@@ -17,7 +17,7 @@ in the terminal (you need to have [yarn](https://yarnpkg.com/getting-started/ins
 
 This will run the test for mobileAPI using 1 VUser **k6**.
 
-2. Running using docker
+### Running using docker
 
 - Ensure you have [docker](https://www.docker.com/products/docker-desktop) and [docker-compose](https://docs.docker.com/compose/install/) installed on your machine.
 
@@ -25,10 +25,8 @@ This will run the test for mobileAPI using 1 VUser **k6**.
 
 - Go to **localhost:3000** in your browser to login to Grafana with the username '**admin**' and the password '**admin**'.
 
-
 - Now run the test using the following command: `yarn go:docker` 
-
-This will run the test for mobileAPI using 1 VUser.
+(This will run the test for mobileAPI using 1 VUser.)
 
 
 # Folder structure
